@@ -1,0 +1,5 @@
+<!-- Save as mrjs-flat.svg or inline -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Mr. JS logo">
+  <rect width="128" height="128" rx="64" fill="#0f172a"></rect>
+  <text x="50%" y="52%" text-anchor="middle" fill="#fff" font-family="Inter, system-ui, Arial" font-weight="700" font-size="28">Mr. JS</text>
+</svg>

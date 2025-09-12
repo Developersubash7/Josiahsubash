@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sriracha&display=swap');
+@import "tailwindcss";
+header ul li{
+    @apply px-2
+}
+.bg-primary{
+    background-color: rgb(85, 85, 255);
+}
+.bg-secondary{
+  background-color: white
+}
+.mobile-nav {
+  @apply fixed top-16 left-0 w-full pb-4.5 pt-4.5 bg-purple-400
+        transition-all duration-500 ease-in-out delay-200;
+}
+.mobile-nav ul li{
+  @apply flex justify-center items-center bg-white text-black p-2.5 mx-4
+}
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.project_box{
+  @apply opacity-0  absolute left-0 right-0 bottom-0 top-0 bg-blue-950 p-4 duration-500 hover:opacity-95 rounded-2xl;
+}
+.btn{
+  /* @apply bg-white text-black px-5 py-2 font-bold rounded hover:bg-blue-200 hover:text-shadow-lime-950 */
+  @apply flex items-center font-medium text-white text-[17px] 
+        px-6 py-3 rounded-full 
+        bg-gradient-to-b from-[#4d36d0] to-[#8474fe]
+        shadow-[0_0.7em_1.5em_-0.5em_rgba(77,54,208,0.74)]
+        hover:shadow-[0_0.5em_1.5em_-0.5em_rgba(77,54,208,0.74)]
+        active:shadow-[0_0.3em_1em_-0.5em_rgba(77,54,208,0.74)]
+        transition-shadow duration-150
+        space-x-2
+        cursor-pointer
+}
+.btn1{
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
+}
+html{
+  scroll-behavior: smooth;
+}
