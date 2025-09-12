@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <div id='hero'>
-      <section className='flex gap-6 flex-col md:flex-row md:px-5 pt-30 md:py-42 bg-secondary md:justify-center md:items-center'>
+      <section className='flex gap-2 md:gap-5 flex-col md:flex-row md:px-5 pt-30 px-10 md:py-42 bg-secondary md:justify-center md:items-center'>
         <div className='md:w-1/2 flex flex-col space-y-5'>
           <h1 className='text-5xl md:text-6xl'>
             <span className='sriracha-regular'>Hi, <br /> I'm Josiah</span>
@@ -64,24 +64,23 @@ const Hero = () => {
             </div>
 
             {/* Hire Me Button */}
-            <button className="relative group px-5 py-3 overflow-hidden rounded-full cursor-pointer transition-transform duration-200 active:scale-95">
-              {/* Background Circle/Effect */}
-              <span className="absolute top-0 left-0 w-11 h-11 rounded-full bg-blue-200 transition-all duration-300 group-hover:w-1/47"></span>
+            <a href="#contact">
+              <button className="relative inline-block w-48 h-auto cursor-pointer outline-none border-0 bg-transparent p-0 font-semibold text-gray-900 group">
+                {/* Circle */}
+                <span className="relative block w-12 h-12 bg-[#282936] rounded-[1.625rem] transition-all duration-[450ms] ease-[cubic-bezier(0.65,0,0.076,1)] group-hover:w-full">
+                  {/* Arrow Icon */}
+                  <span className="absolute top-1/2 left-2 transform -translate-y-1/2 w-4 h-0.5 bg-transparent transition-all duration-[450ms] ease-[cubic-bezier(0.65,0,0.076,1)] group-hover:bg-white translate-x-0">
+                    {/* Arrow Tip */}
+                    <span className="absolute top-[-4.5px] right-[1px] w-2.5 h-2.5 border-t-[2px] border-r-[2px] border-white rotate-45"></span>
+                  </span>
+                </span>
 
-              {/* Button Text and Icon */}
-              <span className="relative flex items-center font-bold text-blue-900">
-                Hire me
-                <svg
-                  className="ml-2 w-4 h-4 stroke-current transition-transform duration-300 transform -translate-x-1 group-hover:translate-x-0"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M1,5 L11,5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <polyline points="8 1 12 5 8 9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
-            </button>
+                {/* Button Text */}
+                <span className="absolute inset-0 flex items-center justify-start pl-20 text-[#282936] font-bold uppercase transition-colors duration-[450ms] ease-[cubic-bezier(0.65,0,0.076,1)] group-hover:text-white">
+                  More about
+                </span>
+              </button>
+            </a>
           </div>
 
         </div>

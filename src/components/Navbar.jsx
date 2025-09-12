@@ -8,7 +8,7 @@ const Navbar = () => {
         <header className="text-white">
             <nav className="flex justify-between items-center max-w-8xl mx-auto px-6 py-6 fixed w-full 
                             bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-800 
-                            z-50 border-b-4 border-fuchsia-500 shadow-xl backdrop-blur-md rounded-b-2xl">
+                            z-50 border-b-4 border-fuchsia-500 shadow-xl backdrop-blur-md md:rounded-b-2xl">
                 
                 {/* Logo */}
                 <a
