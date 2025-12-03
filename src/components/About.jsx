@@ -1,67 +1,90 @@
 import React from "react";
-import aboutImg from "../assets/about.png";
 
 const About = () => {
-  const config = {
-    line1:
-      "💻 Proficient in MERN Stack Development – Skilled in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js, with a solid understanding of web fundamentals (HTML, CSS, JavaScript) and responsive UI design.",
-    line2:
-      "🚀 Hands-on Project Experience – Developed multiple projects applying React.js for frontend, integrated with backend APIs, and used MongoDB/Mongoose for database management, showcasing the ability to design, develop, and deploy complete web solutions.",
-    line3:
-      "🧩 Problem-Solving & Programming Skills – Strong foundation in Python programming and problem-solving, with the ability to write efficient, optimized code; combined with an intermediate understanding of backend frameworks, enabling end-to-end application development.",
-  };
-
-  const highlights = [config.line1, config.line2, config.line3];
+  const coreSkills = ["JavaScript (ES6+)", "React", "Redux", "Node.js", "Express.js"];
+  const techStack = [
+    "MongoDB",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "Git / GitHub",
+    "REST APIs",
+    "JWT Auth",
+    "Vercel Deployment"
+  ];
 
   return (
-    <section
-      id="about"
-      className="bg-blue-950 text-white py-16 px-6 md:px-16"
-    >
-      <div className="container mx-auto flex flex-col md:flex-row items-center gap-10">
-        {/* Left Side Image */}
-        <div className="md:w-1/2 flex justify-center">
-          <img
-            src={aboutImg}
-            alt="About me"
-            className="w-72 md:w-110 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-        </div>
+    <section id='about' className="min-h-screen w-full bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white py-20 px-6">
+      <div className="max-w-4xl mx-auto space-y-12">
 
-        {/* Right Side Content */}
-        <div className="md:w-1/2 space-y-6">
-          <h1 className="text-3xl font-medium underline decoration-blue-500 underline-offset-8">
+        {/* Header */}
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold tracking-wide drop-shadow-lg">
             About Me
           </h1>
-
-          {/* Paragraphs with background */}
-          <div className="space-y-4 text-lg leading-relaxed">
-            {highlights.map((text, idx) => (
-              <p
-                key={idx}
-                className="bg-blue-900/40 p-4 rounded-lg shadow-md border border-blue-800 
-                           backdrop-blur-sm transition-all duration-300
-                           hover:bg-blue-800/60 hover:translate-x-2 
-                           hover:shadow-xl hover:border-blue-500"
-              >
-                {text}
-              </p>
-            ))}
-          </div>
-
-          {/* Call to Action */}
-          <div className="pt-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition-all duration-300"
-            >
-              View My Projects
-            </a>
-          </div>
+          <p className="text-gray-300 text-lg mt-3">
+            MERN Stack Developer | Full Stack Enthusiast
+          </p>
         </div>
+
+        {/* Core Skills */}
+        <div className="bg-gray-900/60 p-6 rounded-2xl shadow-xl border border-gray-700 backdrop-blur">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-400">
+            Core Skills
+          </h2>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-300">
+            {coreSkills.map((skill, i) => (
+              <li
+                key={i}
+                className="bg-gray-800/70 p-3 rounded-lg border border-gray-700 
+                           shadow hover:shadow-blue-500/20 hover:border-blue-500 
+                           transition-all duration-300 text-sm"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Tech Stack */}
+        <div className="bg-gray-900/60 p-6 rounded-2xl shadow-xl border border-gray-700 backdrop-blur">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-400">
+            Tech Stack
+          </h2>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-300">
+            {techStack.map((tech, i) => (
+              <li
+                key={i}
+                className="bg-gray-800/70 p-3 rounded-lg border border-gray-700 
+                           shadow hover:shadow-blue-500/20 hover:border-blue-500 
+                           transition-all duration-300 text-sm"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Strengths & Work Style */}
+
+        <div className="bg-gradient-to-r from-[#0A0F33] to-[#3F1C85] p-8 rounded-3xl shadow-2xl border border-purple-700 backdrop-blur-lg">
+          <h2 className="text-2xl font-bold mb-4 text-white text-center">
+            Strengths & Work Style
+          </h2>
+          <p className="text-gray-200 text-lg leading-relaxed space-y-3">
+            I have a <span className="text-purple-400 font-semibold">problem-solving attitude</span> that helps me tackle challenges efficiently.
+            I write <span className="text-purple-400 font-semibold">clean and readable code</span> to ensure maintainability and clarity.
+            My <span className="text-purple-400 font-semibold">debugging and error-handling skills</span> allow me to identify and fix issues quickly.
+            I am also an <span className="text-purple-400 font-semibold">effective vibe coder</span>, bringing positivity and focus to the team.
+          </p>
+        </div>
+
+
+
       </div>
     </section>
   );
 };
 
 export default About;
+
