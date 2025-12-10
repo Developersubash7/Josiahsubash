@@ -56,11 +56,11 @@ const Hero = () => {
             </p>
 
             {/* CTA Pill */}
-            <div className="mt-8 flex items-center gap-6">
-              <div className="rounded-full bg-white/5 px-4 py-3 flex items-center gap-4 shadow-lg">
+            <div className="mt-8 flex items-center  gap-6">
+              <div className="rounded-full bg-white/5 px-4 py-3 flex items-center   gap-4 shadow-lg">
                 <span className="text-sm opacity-90">Passionate Web Developer</span>
                 <a href="#about" className="ml-4 inline-block">
-                  <button className="px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-fuchsia-500 text-white font-medium shadow-md hover:to-pink-500 transition-all duration-300">
+                  <button className=" px-3 py-2.5  md:px-5  md:py-2.5  rounded-full bg-gradient-to-r from-blue-500 to-fuchsia-500 text-white font-medium shadow-md hover:to-pink-500 transition-all duration-300">
                     More About
                   </button>
                 </a>
