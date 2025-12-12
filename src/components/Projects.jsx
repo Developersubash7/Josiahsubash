@@ -17,7 +17,7 @@ const Projects = () => {
         proName: "Freshio Grocery",
         proImage: w2,
         proDescrip: "Freshio Grocery Web page Developed by using React & Tailwind",
-        link: "https://github.com/Developersubash7/Grocery.git"
+        link: "https://veggies-blush.vercel.app/"
       },
       {
         proName: "My Portfolio",
@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <section id='projects' className='flex flex-col justify-center px-5 py-10 md:py-10 md:mt-15'>
       <div className='flex w-1/3 justify-start pl-13 '>
-        <div className='text-4xl font-extrabold tracking-wide drop-shadow-lg'>Projects</div>
+        <div className='text-4xl font-extrabold tracking-wide drop-shadow-lg'>Recent Projects</div>
       </div>
 
       <div className='w-full pt-10 flex justify-center p-10 '>
